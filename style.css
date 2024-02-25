@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(112, 18, 205);
+    background-image: url(bgDesktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30px;
+}
+
+header{
+    margin-bottom: 60px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.heroSection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.container1{
+    width: 55%;
+}
+
+.mainImage{
+    width: 100%;
+}
+
+.container2{
+    width: 45%;
+    padding: 50px;
+}
+
+.heading{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.para{
+    font-family: Open Sans;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.register{
+    color: blueviolet;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 50px;
+    box-shadow: 1px 1px 7px rgb(42, 42, 42);
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.register:hover{
+    background-color: rgb(254, 91, 254);
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: end;
+}
+
+.contactSection{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contactLogo{
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(112, 18, 205);
+    color: white;
+    transition: border-color 0.2s linear, color 0.2s linear;
+}
+
+.contactLogo:hover{
+    border-color: rgb(253, 60, 253);
+    color: rgb(253, 60, 253);
+    cursor: pointer;
+}
+
+@media(max-width:850px){
+    body{
+        background-image: url(bgMobile.svg);
+        background-size: cover;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .heroSection{
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .container1, .container2{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .heading{
+        font-size: 25px;
+    }
+
+    footer{
+        justify-content: center;
+    }
+}
